@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অর্ডার সফল - TinyStepsBD</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Success Section -->
+    <section class="success-section">
+        <div class="success-container">
+            <div class="success-icon">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+            </div>
+            <h1>অর্ডার সফলভাবে দেওয়া হয়েছে!</h1>
+            <p class="success-message">আপনার অর্ডারটি আমরা পেয়েছি এবং শীঘ্রই প্রসেসিং শুরু হবে।</p>
+            
+            <div class="order-details">
+                <div class="order-info">
+                    <strong>অর্ডার নম্বর:</strong>
+                    <span id="successOrderId">TS-20251025-123456</span>
+                </div>
+                <div class="order-info">
+                    <strong>মোট Amount:</strong>
+                    <span id="successOrderTotal">২০২০৳</span>
+                </div>
+                <div class="order-info">
+                    <strong>ডেলিভারি ঠিকানা:</strong>
+                    <span id="successOrderAddress">ঢাকা, বাংলাদেশ</span>
+                </div>
+            </div>
+
+            <div class="success-actions">
+                <button class="track-order-btn" onclick="window.location.href='orders.html'">
+                    অর্ডার ট্র্যাক করুন
+                </button>
+                <button class="continue-shopping-btn" onclick="window.location.href='shop.html'">
+                    শপিং চালিয়ে যান
+                </button>
+            </div>
+
+            <div class="whatsapp-help">
+                <p>কোন প্রশ্ন থাকলে আমাদের হোয়াটসঅ্যাপে联系 করুন</p>
+                <a href="https://wa.me/880XXXXXXXXX" class="whatsapp-contact-btn" target="_blank">
+                    হোয়াটসঅ্যাপে মেসেজ করুন
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

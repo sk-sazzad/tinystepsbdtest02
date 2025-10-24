@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আপনার কার্ট - TinyStepsBD</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Cart Page Header -->
+    <section class="cart-header">
+        <h1>আপনার শপিং কার্ট</h1>
+        <p>আপনার নির্বাচিত প্রোডাক্টগুলো</p>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="cart-container">
+            <!-- Cart Items -->
+            <div class="cart-items-section">
+                <div class="cart-items-header">
+                    <h2>প্রোডাক্টসমূহ</h2>
+                </div>
+                <div class="cart-items-list" id="cartItemsList">
+                    <!-- Cart items will be loaded by JavaScript -->
+                </div>
+                <div class="empty-cart" id="emptyCart">
+                    <p>আপনার কার্টে কোন প্রোডাক্ট নেই</p>
+                    <button class="continue-shopping" onclick="window.location.href='shop.html'">কিনতে চলুন</button>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h3>অর্ডার সামারি</h3>
+                <div class="summary-line">
+                    <span>সাবটোটাল:</span>
+                    <span id="subtotalAmount">০৳</span>
+                </div>
+                <div class="summary-line">
+                    <span>ডেলিভারি চার্জ:</span>
+                    <span id="deliveryFee">০৳</span>
+                </div>
+                <div class="summary-line total">
+                    <span>মোট:</span>
+                    <span id="totalAmount">০৳</span>
+                </div>
+                <button class="checkout-btn" id="proceedToCheckout" onclick="window.location.href='checkout.html'">
+                    চেকআউট করুন
+                </button>
+                <button class="continue-shopping-btn" onclick="window.location.href='shop.html'">
+                    শপিং চালিয়ে যান
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

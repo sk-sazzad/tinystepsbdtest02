@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আপনার অর্ডার - TinyStepsBD</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Orders Page Header -->
+    <section class="orders-header">
+        <h1>আপনার অর্ডারসমূহ</h1>
+        <p>আপনার পূর্বের所有 অর্ডার ট্র্যাক করুন</p>
+    </section>
+
+    <!-- Orders Section -->
+    <section class="orders-section">
+        <div class="orders-container">
+            <!-- Order Search -->
+            <div class="order-search">
+                <input type="text" id="orderSearch" placeholder="অর্ডার আইডি দিয়ে খুঁজুন...">
+                <button id="searchOrderBtn">খুঁজুন</button>
+            </div>
+
+            <!-- Orders List -->
+            <div class="orders-list" id="ordersList">
+                <!-- Orders will be loaded by JavaScript -->
+            </div>
+
+            <div class="no-orders" id="noOrders" style="display: none;">
+                <p>আপনার কোন অর্ডার নেই</p>
+                <button class="shop-now-btn" onclick="window.location.href='shop.html'">এখনই শপিং করুন</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/orders.js"></script>
+</body>
+</html>

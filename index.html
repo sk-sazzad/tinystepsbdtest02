@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyStepsBD - শিশুদের জুতা ও স্যান্ডেল</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>আপনার শিশুর প্রথম পদক্ষেপের জন্য সেরা পণ্য</h1>
+            <p>উচ্চমানের উপকরণে তৈরি আরামদায়ক ও টেকসই জুতা ও স্যান্ডেল</p>
+            <button class="cta-button" onclick="window.location.href='shop.html'">এখনই কিনুন</button>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/banner.jpg" alt="TinyStepsBD Baby Products">
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <h2 class="section-title">ক্যাটেগরি ব্রাউজ করুন</h2>
+        <div class="categories-grid">
+            <div class="category-card" onclick="window.location.href='shop.html?category=boys'">
+                <div class="category-icon">👦</div>
+                <h3>ছেলেদের জুতা</h3>
+                <p>০-৬ বছর বয়সী ছেলেদের জন্য</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='shop.html?category=girls'">
+                <div class="category-icon">👧</div>
+                <h3>মেয়েদের জুতা</h3>
+                <p>০-৬ বছর বয়সী মেয়েদের জন্য</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='shop.html?category=boys-girls'">
+                <div class="category-icon">👦👧</div>
+                <h3>ছেলে-মেয়ে উভয়ের</h3>
+                <p>সব বাচ্চাদের জন্য উপযোগী</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='shop.html?age=0-2'">
+                <div class="category-icon">👶</div>
+                <h3>০-২ বছর</h3>
+                <p>ছোট বাচ্চাদের জন্য নরম জুতা</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='shop.html?age=3-6'">
+                <div class="category-icon">🧒</div>
+                <h3>৩-৬ বছর</h3>
+                <p>বড় বাচ্চাদের জন্য টেকসই জুতা</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Animated Section -->
+    <section class="reviews-section">
+        <h2 class="section-title">গ্রাহকদের মন্তব্য</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="review-text">"জুতার কোয়ালিটি অনেক ভালো, আমার বাচ্চা খুব আরাম পায়।"</div>
+                <div class="review-author">- রাফি খান, ঢাকা</div>
+            </div>
+            <div class="review-card">
+                <div class="review-text">"দ্রুত ডেলিভারি এবং ভালো সার্ভিস। খুবই সন্তুষ্ট।"</div>
+                <div class="review-author">- জারা আহমেদ, চট্টগ্রাম</div>
+            </div>
+            <div class="review-card">
+                <div class="review-text">"দাম তুলনামূলকভাবে অনেক ভালো এবং জুতার ডিজাইন সুন্দর।"</div>
+                <div class="review-author">- আরমান আলী, সিলেট</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Selling Products Section -->
+    <section class="featured-products">
+        <h2 class="section-title">টপ সেলিং প্রোডাক্ট</h2>
+        <div class="products-grid" id="featuredProducts">
+            <!-- Featured products will be loaded by JavaScript -->
+        </div>
+        <div class="view-all-container">
+            <button class="view-all-btn" onclick="window.location.href='shop.html'">সব প্রোডাক্ট দেখুন</button>
+        </div>
+    </section>
+
+    <!-- WhatsApp Subscribe Section -->
+    <section class="whatsapp-subscribe-section">
+        <div class="subscribe-container">
+            <h2>হোয়াটসঅ্যাপে আপডেট পান</h2>
+            <p>নতুন প্রোডাক্ট এবং অফার সম্পর্কে সবার আগে জানতে সাবস্ক্রাইব করুন</p>
+            <form class="subscribe-form" id="homeWhatsappSubscribe">
+                <input type="tel" placeholder="আপনার মোবাইল নম্বর" required class="phone-input">
+                <button type="submit" class="subscribe-btn">সাবস্ক্রাইব করুন</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/data-manager.js"></script>
+</body>
+</html>

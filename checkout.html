@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>চেকআউট - TinyStepsBD</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Checkout Page Header -->
+    <section class="checkout-header">
+        <h1>চেকআউট</h1>
+        <p>আপনার অর্ডার সম্পূর্ণ করুন</p>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="checkout-container">
+            <!-- Customer Information Form -->
+            <div class="checkout-form-section">
+                <h2>গ্রাহক তথ্য</h2>
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label for="customerName">পুরো নাম *</label>
+                        <input type="text" id="customerName" name="customerName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone">মোবাইল নম্বর *</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerEmail">ইমেইল (ঐচ্ছিক)</label>
+                        <input type="email" id="customerEmail" name="customerEmail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deliveryArea">ডেলিভারি এরিয়া *</label>
+                        <select id="deliveryArea" name="deliveryArea" required>
+                            <option value="">এলাকা নির্বাচন করুন</option>
+                            <option value="inside_dhaka">ঢাকা সিটি কর্পোরেশন (৮০৳)</option>
+                            <option value="outside_dhaka">ঢাকার বাইরে (১৫০৳)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerAddress">সম্পূর্ণ ঠিকানা *</label>
+                        <textarea id="customerAddress" name="customerAddress" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialNotes">বিশেষ নির্দেশিকা (ঐচ্ছিক)</label>
+                        <textarea id="specialNotes" name="specialNotes" rows="2" placeholder="ডেলিভারি সম্পর্কিত কোন বিশেষ নির্দেশিকা থাকলে এখানে লিখুন..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentMethod">পেমেন্ট মেথড *</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="cash_on_delivery">ক্যাশ অন ডেলিভারি</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="place-order-btn" id="placeOrderBtn">
+                        অর্ডার কনফার্ম করুন
+                    </button>
+                </form>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary-section">
+                <h2>আপনার অর্ডার</h2>
+                <div class="order-summary">
+                    <div class="order-items" id="checkoutOrderItems">
+                        <!-- Order items will be loaded by JavaScript -->
+                    </div>
+                    <div class="order-totals">
+                        <div class="total-line">
+                            <span>সাবটোটাল:</span>
+                            <span id="checkoutSubtotal">০৳</span>
+                        </div>
+                        <div class="total-line">
+                            <span>ডেলিভারি চার্জ:</span>
+                            <span id="checkoutDelivery">০৳</span>
+                        </div>
+                        <div class="total-line grand-total">
+                            <span>মোট:</span>
+                            <span id="checkoutTotal">০৳</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/checkout.js"></script>
+</body>
+</html>

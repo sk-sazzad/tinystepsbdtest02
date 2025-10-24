@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রোডাক্ট ডিটেইলস - TinyStepsBD</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Product Details Section -->
+    <section class="product-details-page">
+        <div class="product-details-container">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="productMainImage" src="" alt="Product Main Image">
+                </div>
+                <div class="image-thumbnails" id="productThumbnails">
+                    <!-- Thumbnails will be loaded by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 id="productName">প্রোডাক্টের নাম</h1>
+                <div class="product-meta">
+                    <span class="product-id" id="productId">TS-BD_517</span>
+                    <span class="product-category" id="productCategory">ছেলে/মেয়ে</span>
+                </div>
+
+                <div class="product-price">
+                    <span class="current-price" id="productCurrentPrice">৯৮০৳</span>
+                    <span class="original-price" id="productOriginalPrice">১২০০৳</span>
+                    <span class="discount" id="productDiscount">১৮%</span>
+                </div>
+
+                <p class="product-description" id="productDescription">
+                    প্রোডাক্টের বিস্তারিত বিবরণ...
+                </p>
+
+                <!-- Selection Options -->
+                <div class="selection-options">
+                    <div class="option-group">
+                        <label>রং নির্বাচন করুন:</label>
+                        <div class="color-options" id="colorOptions">
+                            <!-- Color options will be loaded by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <label>সাইজ রেঞ্জ:</label>
+                        <span class="size-range" id="sizeRange">২০-৩০</span>
+                    </div>
+
+                    <div class="option-group">
+                        <label>পরিমাণ:</label>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1" max="10">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" id="addToCartBtn">
+                        কার্টে যোগ করুন
+                    </button>
+                    <button class="buy-now-btn" id="buyNowBtn">
+                        এখনই কিনুন
+                    </button>
+                </div>
+
+                <!-- Product Features -->
+                <div class="product-features">
+                    <div class="feature">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        <span>ফ্রি ডেলিভারি (ঢাকার ভিতরে)</span>
+                    </div>
+                    <div class="feature">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        <span>ক্যাশ অন ডেলিভারি</span>
+                    </div>
+                    <div class="feature">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        <span>৭ দিনের রিটার্ন পলিসি</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products">
+        <h2 class="section-title">সম্পর্কিত প্রোডাক্ট</h2>
+        <div class="products-grid" id="relatedProducts">
+            <!-- Related products will be loaded by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

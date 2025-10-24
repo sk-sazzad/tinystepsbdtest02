@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সব প্রোডাক্ট - TinyStepsBD</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Shop Page Header -->
+    <section class="shop-header">
+        <h1>আমাদের সব প্রোডাক্ট</h1>
+        <p>বাচ্চাদের জন্য উচ্চমানের জুতা ও স্যান্ডেল</p>
+    </section>
+
+    <!-- Filters and Search -->
+    <section class="shop-filters">
+        <div class="filter-group">
+            <label for="categoryFilter">ক্যাটেগরি:</label>
+            <select id="categoryFilter">
+                <option value="all">সব ক্যাটেগরি</option>
+                <option value="boys">ছেলেদের</option>
+                <option value="girls">মেয়েদের</option>
+                <option value="boys-girls">ছেলে-মেয়ে উভয়ের</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="ageFilter">বয়স:</label>
+            <select id="ageFilter">
+                <option value="all">সব বয়স</option>
+                <option value="0-2">০-২ বছর</option>
+                <option value="3-6">৩-৬ বছর</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="sortFilter">সাজান:</label>
+            <select id="sortFilter">
+                <option value="newest">নতুনতম</option>
+                <option value="price-low">দাম: কম থেকে বেশি</option>
+                <option value="price-high">দাম: বেশি থেকে কম</option>
+                <option value="name">নাম অনুসারে</option>
+            </select>
+        </div>
+        <div class="search-group">
+            <input type="text" id="productSearch" placeholder="প্রোডাক্ট খুঁজুন...">
+            <button id="searchButton">খুঁজুন</button>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="products-container">
+            <div class="products-grid" id="allProducts">
+                <!-- All products will be loaded by JavaScript -->
+            </div>
+            <div class="loading-spinner" id="loadingSpinner">
+                লোড হচ্ছে...
+            </div>
+            <div class="no-products" id="noProducts" style="display: none;">
+                কোন প্রোডাক্ট পাওয়া যায়নি।
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/data-manager.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>যোগাযোগ - TinyStepsBD</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Contact Page Header -->
+    <section class="contact-header">
+        <h1>যোগাযোগ করুন</h1>
+        <p>আমাদের সাথে যোগাযোগ করতে নিচের ফর্মটি পূরণ করুন</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h2>মেসেজ পাঠান</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName">আপনার নাম *</label>
+                        <input type="text" id="contactName" name="contactName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactPhone">মোবাইল নম্বর *</label>
+                        <input type="tel" id="contactPhone" name="contactPhone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">ইমেইল</label>
+                        <input type="email" id="contactEmail" name="contactEmail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">বিষয় *</label>
+                        <select id="contactSubject" name="contactSubject" required>
+                            <option value="">বিষয় নির্বাচন করুন</option>
+                            <option value="product_inquiry">পণ্য সম্পর্কিত জিজ্ঞাসা</option>
+                            <option value="order_issue">অর্ডার সমস্যা</option>
+                            <option value="delivery_query">ডেলিভারি জিজ্ঞাসা</option>
+                            <option value="return_exchange">রিটার্ন/এক্সচেঞ্জ</option>
+                            <option value="other">অন্যান্য</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">মেসেজ *</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="আপনার মেসেজ এখানে লিখুন..."></textarea>
+                    </div>
+
+                    <button type="submit" class="send-message-btn">
+                        মেসেজ পাঠান
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info-section">
+                <h2>যোগাযোগের তথ্য</h2>
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="method-icon">📞</div>
+                        <div class="method-info">
+                            <h3>ফোন নম্বর</h3>
+                            <p>+880 1XXX-XXXXXX</p>
+                            <p>সকাল ৯টা - রাত ১০টা</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">📧</div>
+                        <div class="method-info">
+                            <h3>ইমেইল</h3>
+                            <p>tinystepsbd@gmail.com</p>
+                            <p>২৪ ঘন্টার মধ্যে রিপ্লাই</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">💬</div>
+                        <div class="method-info">
+                            <h3>হোয়াটসঅ্যাপ</h3>
+                            <p>+880 1XXX-XXXXXX</p>
+                            <p>দ্রুত রিপ্লাই</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">📍</div>
+                        <div class="method-info">
+                            <h3>ঠিকানা</h3>
+                            <p>ঢাকা, বাংলাদেশ</p>
+                            <p>সম্পূর্ণ বাংলাদেশজুড়ে ডেলিভারি</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Hours -->
+                <div class="business-hours">
+                    <h3>ব্যবসায়িক ঘন্টা</h3>
+                    <div class="hours-list">
+                        <div class="hour-item">
+                            <span>সোম - শনি:</span>
+                            <span>সকাল ৯টা - রাত ১০টা</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>রবি:</span>
+                            <span>বিকাল ২টা - রাত ১০টা</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="contact-social">
+                    <h3>সোশ্যাল মিডিয়া</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">ফেসবুক</a>
+                        <a href="#" class="social-link">ইনস্টাগ্রাম</a>
+                        <a href="#" class="social-link">হোয়াটসঅ্যাপ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>
